@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1473E58B-88E3-4C25-A799-421599BFFCE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Baitaplon</RootNamespace>
+    <AssemblyName>Baitaplon</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmDangky.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangky.Designer.cs">
+      <DependentUpon>frmDangky.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmID.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmID.Designer.cs">
+      <DependentUpon>frmID.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLopcn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLopcn.Designer.cs">
+      <DependentUpon>frmLopcn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLopHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLopHP.Designer.cs">
+      <DependentUpon>frmLopHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMainDKTC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMainDKTC.Designer.cs">
+      <DependentUpon>frmMainDKTC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMONHOC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMONHOC.Designer.cs">
+      <DependentUpon>frmMONHOC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMonTQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMonTQ.Designer.cs">
+      <DependentUpon>frmMonTQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQUANLY.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQUANLY.Designer.cs">
+      <DependentUpon>frmQUANLY.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSinhVien.Designer.cs">
+      <DependentUpon>frmSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTracuuHP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTracuuHP.Designer.cs">
+      <DependentUpon>frmTracuuHP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QLQKTCDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLQKTCDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLTCDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLTCDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanlyDKTCDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanlyDKTCDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QuanlyDKTCDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QuanlyDKTCDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmDangky.resx">
+      <DependentUpon>frmDangky.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmID.resx">
+      <DependentUpon>frmID.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLopcn.resx">
+      <DependentUpon>frmLopcn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLopHP.resx">
+      <DependentUpon>frmLopHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMainDKTC.resx">
+      <DependentUpon>frmMainDKTC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMONHOC.resx">
+      <DependentUpon>frmMONHOC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMonTQ.resx">
+      <DependentUpon>frmMonTQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQUANLY.resx">
+      <DependentUpon>frmQUANLY.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSinhVien.resx">
+      <DependentUpon>frmSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTracuuHP.resx">
+      <DependentUpon>frmTracuuHP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="QLQKTCDataSet.xsc">
+      <DependentUpon>QLQKTCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLQKTCDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLQKTCDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLQKTCDataSet.xss">
+      <DependentUpon>QLQKTCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTCDataSet.xsc">
+      <DependentUpon>QLTCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLTCDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLTCDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLTCDataSet.xss">
+      <DependentUpon>QLTCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanlyDKTCDataSet.xsc">
+      <DependentUpon>QuanlyDKTCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanlyDKTCDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanlyDKTCDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanlyDKTCDataSet.xss">
+      <DependentUpon>QuanlyDKTCDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QuanlyDKTCDataSet1.xsc">
+      <DependentUpon>QuanlyDKTCDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QuanlyDKTCDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QuanlyDKTCDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QuanlyDKTCDataSet1.xss">
+      <DependentUpon>QuanlyDKTCDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-clipart-hammer-and-wrench-illustration-digital-marketing-computer-icons-search-engine-optimization-maintenance-symbol-icon-miscellaneous-blue-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2x.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\luu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quản lý hệ thống.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-icon-white-silhouette-on-blue-round-vector-20326047.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1asee.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quản lý hệ thống1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %285%291.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
